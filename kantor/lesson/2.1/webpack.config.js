@@ -32,6 +32,17 @@ module.exports = {
 		})
 	],
 
+	resolve: {
+		modulesDirectories: ['node_modules'],
+		extensions: ['', '.js']
+	},
+
+	resolveLoader: {
+		modulesDirectories: ['node_modules'],
+		moduleTemplates: ['*-loader', '*'],
+		extensions: ['', '.js']
+	},
+
 	module: {
 		loaders: [{
 			test: /\.js$/,
