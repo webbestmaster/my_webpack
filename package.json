@@ -1,0 +1,15 @@
+{
+  "name": "MyWebPack",
+  "version": "0.0.1",
+  "description": "My webpack tutorials and examples",
+  "license": "MIT",
+  "repository": {
+    "type": "git"
+  },
+  "scripts": {
+
+  },
+  "devDependencies": {
+
+  }
+}
