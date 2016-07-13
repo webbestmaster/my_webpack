@@ -30,6 +30,18 @@ module.exports = {
 			NODE_ENV: JSON.stringify(NODE_ENV),
 			LANG: JSON.stringify('ru') // or '"ru"' <-  (") with (')
 		})
-	]
+	],
+
+	module: {
+		loaders: [{
+			test: /\.js$/,
+			exclude: /(node_modules|bower_components)/,
+			loader: 'babel',
+			query: {
+				presets: ['es2015'],
+				plugins: ['transform-runtime']
+			}
+		}]
+	}
 
 };

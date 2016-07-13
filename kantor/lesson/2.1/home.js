@@ -1,7 +1,10 @@
 "use strict";
 
-let welcome = require('./welcome');
+import welcome from './welcome';
+
+debugger
 
 welcome('home');
+
 
 exports.welcome = welcome;
