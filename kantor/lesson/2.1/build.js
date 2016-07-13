@@ -56,11 +56,15 @@ var home =
 
 /***/ },
 /* 1 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	
 	module.exports = function (message) {
+	
+		if (true) {
+			console.log(message);
+		}
 	
 		alert('Welcome ' + message);
 	
