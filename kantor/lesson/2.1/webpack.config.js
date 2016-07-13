@@ -4,7 +4,8 @@ module.exports = {
 
 	entry: './home',
 	output: {
-		filename: 'build.js'
+		filename: 'build.js',
+		library: 'home'
 	}
 
 };
