@@ -40,7 +40,9 @@ module.exports = {
 			LANG: JSON.stringify('ru') // or '"ru"' <-  (") with (')
 		}),
 		new webpack.optimize.CommonsChunkPlugin({
-			name: 'common' // will create common.js file
+			name: 'common', // will create common.js file
+			minChunks: 2 // minChunks and chunks otherExcluded properties
+			// chunks: ['about', 'home']
 		})
 	],
 
