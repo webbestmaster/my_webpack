@@ -34,6 +34,7 @@ module.exports = {
 	devtool: NODE_ENV === keys.env.dev ? 'source-map' : null,
 
 	plugins: [
+		new webpack.NoErrorsPlugin(),
 		new webpack.DefinePlugin({
 			NODE_ENV: JSON.stringify(NODE_ENV),
 			LANG: JSON.stringify('ru') // or '"ru"' <-  (") with (')
