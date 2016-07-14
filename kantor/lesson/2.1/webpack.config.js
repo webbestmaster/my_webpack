@@ -12,10 +12,17 @@ const webpack = require('webpack');
 
 module.exports = {
 
-	entry: './home',
+	context: __dirname + '/frontend',
+
+	// entry: './home', // simple variant of 'entry: {..<several entry points>..}'
+	entry: {
+		home: './home',
+		about: './about'
+	},
 	output: {
-		filename: 'build.js',
-		library: 'home'
+		path: __dirname + '/public', // relative path is available, bot not recommended
+		filename: '[name].js',
+		library: '[name]'
 	},
 
 	watch: NODE_ENV === keys.env.dev,
