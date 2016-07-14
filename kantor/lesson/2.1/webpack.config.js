@@ -38,6 +38,9 @@ module.exports = {
 		new webpack.DefinePlugin({
 			NODE_ENV: JSON.stringify(NODE_ENV),
 			LANG: JSON.stringify('ru') // or '"ru"' <-  (") with (')
+		}),
+		new webpack.optimize.CommonsChunkPlugin({
+			name: 'common' // will create common.js file
 		})
 	],
 
