@@ -17,7 +17,8 @@ module.exports = {
 	// entry: './home', // simple variant of 'entry: {..<several entry points>..}'
 	entry: {
 		home: './home',
-		about: './about'
+		about: './about',
+		common: ['./common', './welcome'] // only last module will be exported
 	},
 	output: {
 		path: __dirname + '/public', // relative path is available, bot not recommended
